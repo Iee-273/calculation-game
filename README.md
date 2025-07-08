@@ -1,2 +1,56 @@
-# calculation-game
-Clear the way with calculation! A math game to practice your calculation speed.
+# 計算ランナー (Calculation Runner)
+
+計算力と反射神経が試される、算数ミニゲームです。次々と出題される計算問題を素早く解き、障害物を計算で消してゴールを目指しましょう！
+
+## 主な機能
+
+- 1桁、2桁、3桁から選べる難易度設定
+- 足し算、引き算、掛け算、割り算の四則演算に対応
+- 障害物と計算問題を組み合わせたゲーム
+
+## 遊び方 (How to Play)
+
+**流れ**
+- スタートボタン押下
+- 好きな難易度を選択（2桁,3桁はノートとペンが必要かも）
+- 計算して障害物を消す！
+- ランナーが画面外に出るとゴール！
+
+このゲームはGitHub Pagesで公開しています。
+以下のリンクにアクセスするだけで、ダウンロード不要でブラウザで直接プレイできます。
+
+▶ **[ゲームをプレイする](https://github.com/Iee-273/calculation-game)**
+
+---
+
+## クレジット (Credits)
+
+このプロジェクトは、以下の素晴らしい素材やコードを利用して制作されました。すべてのサイト様、および作者の皆様に心より感謝申し上げます。
+
+### イラスト素材
+素材の二次利用については、各サイトの利用規約に従ってください。
+
+- **いらすとや:** [https://www.irasutoya.com/](https://www.irasutoya.com/)
+  - 障害物の画像
+  - 説明画面背景画像
+- **イラストAC:** [https://www.ac-illust.com/](https://www.ac-illust.com/)
+  - 背景の道路画像
+- **イラストイメージ:** [https://illustimage.com/](https://illustimage.com/)
+  - 走る人の画像
+
+### UIデザイン・コード
+MITライセンスに基づき、作者様のクレジットを記載しています。
+
+- **ボタンのデザイン:** [Uiverse.io by vinodjangid07](https://uiverse.io/vinodjangid07)
+
+### デザインツール
+- **説明写真の編集:** [Canva](https://www.canva.com/)
+  - 説明画像の編集
+
+---
+
+## ライセンス (License)
+
+このプロジェクトのソースコード（HTML, CSS, JavaScript）の著作権は、作者である **Enchan (lee-273)** に帰属します。
+
+プロジェクト内で使用されているイラストや外部のコードには、それぞれ独自のライセンスと利用規約が存在します。それらの二次利用については、各提供元サイトの規約を必ずご確認ください。
