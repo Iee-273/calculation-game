@@ -19,7 +19,7 @@
 このゲームはGitHub Pagesで公開しています。
 以下のリンクにアクセスするだけで、ダウンロード不要でブラウザで直接プレイできます。
 
-▶ **[ゲームをプレイする](https://github.com/Iee-273/calculation-game)**
+▶ **[ゲームをプレイする](https://iee-273.github.io/calculation-game/)**
 
 ---
 
