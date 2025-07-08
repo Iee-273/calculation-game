@@ -1,0 +1,81 @@
+<!DOCTYPE html><!--html5で書かれた宣言-->
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+	<title>計算して障害物爆破！</title>
+    <!-- CSSファイルへのリンク -->
+	<link rel="stylesheet" href="./math_style.css" />
+	<link rel="stylesheet" href="./jquery-ui.min.css">
+	<!-- スクリプト -->
+    <!--<script type="text/javascript" src="./math_questions.js"></script>-->
+	<script type="text/javascript" src="./jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src="./jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./math_main.js"></script>
+    </head>
+    <body>
+        <!-- タイトル画面 -->
+		<div id="title">
+            <div class="contents">
+                <p>答えを書いて障害物を取り除こう！</p>
+                <input type="button" id="startButton" class="button" value="スタート！">
+                <button class="faq-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                      <path
+                        d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"
+                      ></path>
+                    </svg>
+                    <span class="tooltip">How to play?</span>
+                  </button>
+            </div>
+        </div>
+
+        <!-- ゲーム説明画面 -->
+        <div id="gameDiscription">
+            <div class="firstPage">
+                <img src="./img/gameDiscriptionImgs/firstPage.png"> <!-- Canvaで編集 -ソース：https://www.canva.com/ja_jp/ -->
+                <button id="firstPageNext">次へ</button>
+            </div>
+            <div class="secondPage" style="display: none;">
+                <img src="./img/gameDiscriptionImgs/secondPage.png"> <!-- Canvaで編集 -ソース：https://www.canva.com/ja_jp/ -->
+                <button id="backToStartScreen">タイトルへ戻る</button>
+            </div>
+        </div>
+        
+
+        <!-- 選択画面 -->
+        <div id="selectScreen">
+            <button id="oneDigit">一桁</button>
+            <button id="twoDigits">二桁</button>
+            <button id="threeDigits">三桁</button>
+        </div>
+
+        <!-- 問題画面 -->
+        <div id="questionScreen" style="display: none;">
+            <img id="runningPerson" src="./img/走る人.png"> <!-- 走る人の画像 -ソース：イラストイメージ  https://illustimage.com/ -->
+            <img id="obstacle" src="./img/障害物.png" style="display: none;">  <!-- 障害物 -ソース：いらすとや　https://www.irasutoya.com/ -->
+            <h1>回答を入力して障害物を取り除こう！</h1>
+            <p id="question"></p> <!-- 問題を表示する要素 -->
+            <input type="text" id="answer" placeholder="答えを入力">
+            <input type="button" id="submitAnswer" value="Enterで回答送信">
+            <p id="result"></p> <!-- 結果を表示する要素 -->
+         </div>
+
+         <!-- 成功画面 -->
+        <div id="WINresultScreen" style="display: none;">
+            <h1>全ての障害物を取り除いた！</h1>
+            <p>おめでとうございます！</p>
+            <button id="WINscrennBackToTitleButton">タイトルに戻る</button>
+        </div>
+
+        <!-- 失敗画面 -->
+        <div id="LOSEresultScreen" style="display: none;">
+            <h1>残念...</h1>
+            <p>障害物に衝突しました...</p>
+            <button id="LOSEscrennBackToTitleButton">タイトルに戻る</button>
+        </div>
+    </body>
+</html>
